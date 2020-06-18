@@ -10,13 +10,13 @@ class App {
         this.database()
         this.routes()
 
-        this.app.listen(3000, function() {
-            console.log("Servidor rodando na porta 3000")
+        this.app.listen(process.env.PORT || 3000, function() {
+            console.log("Servidor rodando na porta " + process.env.PORT || 3000)
         })
     }
 
     database() {
-        mongoose.connect('URI', { useNewUrlParser: true, useUnifiedTopology: true })
+        mongoose.connect(process.env.MONGO_URI, { useNewUrlParser: true, useUnifiedTopology: true })
         mongoose.connection.on('error', function() {
             console.log('Erro ao conectar-se ao BD')
         })
