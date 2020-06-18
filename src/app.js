@@ -5,6 +5,8 @@ class App {
     constructor() {
         this.app = express()
 
+        this.app.use(require('body-parser').json())
+
         this.database()
         this.routes()
 
