@@ -7,6 +7,7 @@ class Todo {
 
         this.app.get('/', this.items)
         this.app.post('/', this.newItem)
+        this.app.put('/', this.changeItem)
     }
 
     items(req, res) {
@@ -33,6 +34,18 @@ class Todo {
         }, err => {
             res.status(500).json({
                 error: 'Erro ao criar item'
+            })
+        })
+    }
+
+    changeItem(req, res) {
+        ToDo.updateOne({_id: req.body.id}, {title: req.body.new_title, is_done: req.body.new_status}).then( doc => {
+            res.json({
+                ok: true
+            })
+        }, err => {
+            res.status(500).json({
+                error: 'Erro ao atualizar o item'
             })
         })
     }
