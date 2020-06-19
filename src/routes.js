@@ -7,7 +7,8 @@ class Todo {
 
         this.app.get('/', this.items)
         this.app.post('/', this.newItem)
-        this.app.put('/', this.changeItem)
+        this.app.put('/', this.updateItem)
+        this.app.delete('/', this.deleteItem)
     }
 
     items(req, res) {
@@ -38,7 +39,7 @@ class Todo {
         })
     }
 
-    changeItem(req, res) {
+    updateItem(req, res) {
         ToDo.updateOne({_id: req.body.id}, {title: req.body.new_title, is_done: req.body.new_status}).then( doc => {
             res.json({
                 ok: true
@@ -46,6 +47,18 @@ class Todo {
         }, err => {
             res.status(500).json({
                 error: 'Erro ao atualizar o item'
+            })
+        })
+    }
+
+    deleteItem(req, res) {
+        ToDo.deleteOne({_id: req.body.id}).then( doc => {
+            res.json({
+                ok: true
+            })
+        }, err => {
+            res.status(500).json({
+                error: 'Erro ao deletar o item'
             })
         })
     }
