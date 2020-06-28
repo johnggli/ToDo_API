@@ -29,9 +29,7 @@ class Todo {
         })
 
         todoItem.save().then(doc => {
-            res.json({
-                ok: true
-            })
+            res.status(201).json(todoItem)
         }, err => {
             res.status(500).json({
                 error: 'Erro ao criar item'
@@ -40,7 +38,7 @@ class Todo {
     }
 
     updateItem(req, res) {
-        ToDo.updateOne({_id: req.body.id}, {title: req.body.new_title, is_done: req.body.new_status}).then( doc => {
+        ToDo.updateOne({ _id: req.body.id }, { title: req.body.new_title, is_done: req.body.new_status }).then(doc => {
             res.json({
                 ok: true
             })
@@ -52,7 +50,7 @@ class Todo {
     }
 
     deleteItem(req, res) {
-        ToDo.deleteOne({_id: req.body.id}).then( doc => {
+        ToDo.deleteOne({ _id: req.body.id }).then(doc => {
             res.json({
                 ok: true
             })
