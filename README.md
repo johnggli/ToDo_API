@@ -27,6 +27,8 @@
   <a href="#star2-extras">Get in touch</a>
 </p>
 
+---
+
 ## :bulb: About the project
 
 - This project is about a REST API made in JavaScript, using Node.JS and MongoDB for the construction of the database, and hosted/deployed on the Heroku website.
