@@ -2,20 +2,20 @@
 <h3 align="center">REST API made with Node.js, MongoDB and Heroku.</h3>
 
 <p align="center">
-  <img alt="GitHub top language" src="https://img.shields.io/github/languages/top/JohnEmerson1406/ToDo_API?color=%2334CB79">
+  <img alt="GitHub top language" src="https://img.shields.io/github/languages/top/johnggli/ToDo_API?color=%2334CB79">
   
   <img alt="Node version" src="https://img.shields.io/badge/node.js@lts-12.18.0-informational?logo=Node.JS&color=%2334CB79">
   
   <img alt="npm version" src="https://img.shields.io/badge/npm-6.14.4-informational?logo=npm&color=%2334CB79">
 
-  <a href="https://www.linkedin.com/in/johnemerson1406/">
+  <a href="https://www.linkedin.com/in/johnggli/">
     <img alt="Made by" src="https://img.shields.io/badge/made%20by-John%20Emerson-%2334CB79">
   </a>
   
-  <img alt="Repository size" src="https://img.shields.io/github/repo-size/JohnEmerson1406/ToDo_API?color=%2334CB79">
+  <img alt="Repository size" src="https://img.shields.io/github/repo-size/johnggli/ToDo_API?color=%2334CB79">
   
-  <a href="https://github.com/JohnEmerson1406/ToDo_API/commits/master">
-    <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/JohnEmerson1406/ToDo_API?color=%2334CB79">
+  <a href="https://github.com/johnggli/ToDo_API/commits/master">
+    <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/johnggli/ToDo_API?color=%2334CB79">
   </a>
 </p>
 
@@ -51,7 +51,7 @@ Technologies that I used to develop this project
 **Clone the project and access the folder**
 
 ```bash
-$ git clone https://github.com/JohnEmerson1406/ToDo_API.git
+$ git clone https://github.com/johnggli/ToDo_API.git
 ```
 
 **Follow the steps below**
@@ -86,7 +86,7 @@ $ npm start
 # Fork using GitHub official command line
 # If you don't have the GitHub CLI, use the web site to do that.
 
-$ gh repo fork JohnEmerson1406/ToDo_API
+$ gh repo fork johnggli/ToDo_API
 ```
 
 **Follow the steps below**
@@ -113,4 +113,4 @@ After your pull request is merged, you can delete your branch
 
 ---
 
-Made with ♥ by John Emerson :wave: [Get in touch](https://johnemerson1406.github.io/linktree)
+Made with ♥ by John Emerson :wave: [Get in touch](https://johnggli.github.io/linktree)
